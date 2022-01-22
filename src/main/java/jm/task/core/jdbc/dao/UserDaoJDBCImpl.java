@@ -12,7 +12,7 @@ import java.util.List;
 
 public class UserDaoJDBCImpl implements UserDao {
     private String query;
-    Connection connection = Util.getConnection();
+    private Connection connection = Util.getConnection();
 
     public UserDaoJDBCImpl() {
 
