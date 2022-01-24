@@ -71,8 +71,6 @@ public class UserDaoJDBCImpl implements UserDao {
 
         try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
             preparedStatement.execute();
-            preparedStatement.close();
-            connection.close();
         } catch (SQLException throwables) {
             if (connection != null) {
                 try {
